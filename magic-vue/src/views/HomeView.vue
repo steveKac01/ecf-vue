@@ -42,7 +42,7 @@ export default {
 
   }),
   async created() {
-let temp = await axios.get("https://api.magicthegathering.io/v1/cards?pageSize=3&random=true");
+let temp = await axios.get("https://api.magicthegathering.io/v1/cards?pageSize=3");
 this.cards = temp.data.cards;
 console.log(this.cards);
 
