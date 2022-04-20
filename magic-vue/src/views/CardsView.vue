@@ -29,7 +29,7 @@ methods:{
     ,
     cardCount()
     {    
-        return  this.iCard++; //Note pour rémi
+        return  this.iCard++; 
     }
 },  async created() {
 let temp = await axios.get("https://api.magicthegathering.io/v1/cards");
